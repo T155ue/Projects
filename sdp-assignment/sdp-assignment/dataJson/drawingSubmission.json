@@ -1,0 +1,29 @@
+[
+  {
+    "topicID": 1,
+    "authorID": 1,
+    "authorName": "Alice",
+    "description": "Most random drawing ever",
+    "html": "<h1 class='taxi'>texti</h1>",
+    "css": ".taxi{color:blue;}",
+    "upvotes": 12
+  },
+  {
+    "topicID": 1,
+    "authorID": 2,
+    "authorName": "Bobby",
+    "description": "Accurate drawing of an apple",
+    "html": "<h1 class='taxi'>apple</h1>",
+    "css": ".taxi{color:red;}",
+    "upvotes": 0
+  },
+  {
+    "topicID": 2,
+    "authorID": 3,
+    "authorName": "Charlie",
+    "description": "Drawing of a cat",
+    "html": "<h1 class='taxi'>cat</h1>",
+    "css": ".taxi{color:yellow;}",
+    "upvotes": 5
+  }
+]

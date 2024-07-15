@@ -1,0 +1,25 @@
+body {
+  overflow: hidden;
+  zoom: 25%;
+}
+
+.mapContainer {
+  height: 1000vh;
+  width: 1000vw;
+  background-color: rgb(139, 224, 131);
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+}
+
+#moveArea {
+  background-size: cover;
+  position: absolute;
+}
+
+iframe {
+  width: 1250px;
+  height: 1250px;
+  overflow: hidden;
+  border: none;
+}

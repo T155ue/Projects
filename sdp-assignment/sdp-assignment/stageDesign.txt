@@ -1,0 +1,52 @@
+First tutorial: the basics
+stage 1: change colour
+stage 2: add margin and padding
+stage 3: expand the size
+stage 4: increase border
+stage 5: summarize
+
+
+
+Sam plans to invite all his friends over to his house for a party night, he finds his house quite bland for a party and wants to change his walls to blue.
+His first guest, Mary, the giant is the first to came and she cannot enter the door. Help her by increasing the door size using the padding keyword.a
+The house is full and yet there are more freinds to come, help Sam increaase the size of his house using the width keyword.
+Everyone is having fun and the night is still young, yet Sam had a different idea....... help him shrink the windows so no one can see what he is trying to do by using the height keyword.
+The house is full, yet it is not the same as before, only Sam remain. Help him return his house back to normal 
+
+Second tutorial: move the windows
+stage 1: move left
+stage 2: move bottom absolute
+stage 3: flex box line up
+stage 4: space evenly
+stage 5: column skyscraper
+
+.window {width: 80px;height: 120px;background-color: #cde0f7;border: 2px solid black;}
+
+third tutorial: door knock
+stage 1: make a border
+stage 2: add color, position door
+stage 3: lower door, color wall
+stage 4: make a border window, add color
+stage 5: border radius
+
+.door {float: right;height: 180px;width: 100px;border: 2px solid black;position:relative;}\n .doorKnob {height:20px;width:20px;border-radius: 50%;border: 2px solid black;}
+
+
+forth tutorial: interior design
+stage 1: z-index move fireplace behind
+stage 2: move the chair foward
+stage 3: 
+stage 4: 
+stage 5: 
+
+<div class="chair"><div class="chairStructure"><div class="backRest"></div><div class="neck"></div><div class="seat"></div><div class="leg"></div><div class="bottom"><div class="base"></div></div></div></div>
+.chair {position: absolute;}.chairStructure {display:flex; flex-direction: column; align-items: center;}.backRest {border: 1px solid black; border-top: 2px solid transparent; background-color: #ff3333;height: 100px; width: 100px; border-radius:20%;}.neck {height: 10px; width: 10px; background-color: #ff3333;}.seat {border: 1px solid black; border-bottom: 2px solid black;border-top: 2px solid transparent; background-color: #e60000;height: 30px; width: 100px; border-radius:20%;}.bottom {width: 100px; backgeound-color: cyan; display: flex; justify-content: center;}.leg {border-left: 1px solid black; border-right: 1px solid black;height: 30px; width: 12px; background-color:#ff471a;}.base {border-left: 45px solid transparent; border-right: 45px solid transparent; width: 100px; border-bottom: 20px solid #ff0000}
+<div class='table'><div class='tableStrucutre'><div class='tableTop'></div><div class='tableLegs'></div></div></div>
+.table {position: absolute;}.tableStrucutre {display:flex; flex-direction: column; align-items: center;}.tableTop {border-bottom: 1px solid black; height: 20px; width: 300px; background-color: #ff8000;}.tableLegs {height:100px; width: 260px; border-left: 15px solid #ff9933; border-right: 15px solid #ff9933;}
+
+fifth tutorial: make a house
+stage 1: make your hosue layout
+stage 2: 
+stage 3: 
+stage 4: 
+stage 5: 

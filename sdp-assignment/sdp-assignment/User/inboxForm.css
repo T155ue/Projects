@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #1f2937;
+  color: white;
+}
+
+.inbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgba(31, 41, 55, 0.9);
+  padding: 20px;
+  padding-bottom: 80px; /* Adjust as necessary */
+}
+
+.inbox {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin-bottom: 0; /* Adjusted to 0 */
+}
+
+.inbox-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inbox-title h2 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.exit {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #a9a9a9;
+  cursor: pointer;
+}
+
+.exit:hover {
+  color: #666;
+}
+
+.inbox-inputs,
+.inbox textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.inbox-inputs {
+  height: 50px;
+  background-color: #e0e0e0;
+  color: #1f2937;
+}
+
+.inbox textarea {
+  height: 140px;
+  background-color: #e0e0e0;
+  color: #1f2937;
+  resize: none;
+}
+
+.inbox-inputs:focus,
+.inbox textarea:focus {
+  border: 2px solid rgba(12, 68, 164, 1);
+}
+
+.inbox-inputs::placeholder {
+  color: #a9a9a9;
+}
+
+.inbox button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  background-color: #238447;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inbox button:hover {
+  background-color: #22c55e;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1f2937;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+  width: 100%;
+  max-width: 400px;
+  color: white;
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #374151;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+
+.popup .close-btn:hover {
+  background-color: #4b5563;
+}
+
+.popup label {
+  color: white;
+}
+
+.popup input,
+.popup textarea {
+  background-color: #374151;
+  color: white;
+  border: 1px solid #4b5563;
+  padding: 10px;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.popup input:focus,
+.popup textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.popup textarea {
+  resize: none;
+}
+
+.footer-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1f2937;
+  z-index: 999;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bar button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  color: white;
+}
+
+.footer-bar button:hover {
+  background-color: #4b5563;
+}
+
+.button-view-inbox {
+  background-color: #2d8555;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-view-inbox:hover {
+  background-color: #195f33;
+}
+
+.button-send-new-inbox {
+  background-color: #d97706;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-send-new-inbox:hover {
+  background-color: #bb5805;
+}
+
+.section-gap {
+  margin-bottom: 16px;
+}

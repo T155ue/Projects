@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Apple",
+    "expertise": "Begineer",
+    "organizer": "John Doe",
+    "description": "Apple is a red fruit",
+    "status": true
+  },
+  {
+    "id": 2,
+    "title": "Banana",
+    "expertise": "Begineer",
+    "organizer": "John Doe",
+    "description": "Banana is a yellow long fruit",
+    "status": true
+  },
+  {
+    "id": 3,
+    "title": "Mango",
+    "expertise": "Begineer",
+    "organizer": "John Doe",
+    "description": "Mango is a yellow fruit",
+    "status": false
+  },
+  {
+    "id": 4,
+    "title": "Pixel Art Aifel Tower",
+    "expertise": "Amateur",
+    "organizer": "John Doe",
+    "description": "Pixel Art of Aifel Tower",
+    "status": true
+  },
+  {
+    "id": 5,
+    "title": "My Favorite Pokemon",
+    "expertise": "Amateur",
+    "organizer": "John Doe",
+    "description": "Drawing of your favorite Pokemon",
+    "status": false
+  }
+]

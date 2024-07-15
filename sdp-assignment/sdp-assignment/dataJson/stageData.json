@@ -1,0 +1,109 @@
+{
+  "stages": [
+    {
+      "name": "stage 1",
+      "question": "Sam plans to invite all his friends over to his house for a party night, he finds his house quite bland for a party and wants to change his walls to blue.\n First select the class of the wall using .walls{} and use the 'background-color' styling.\nExample: .element {background-color: color}",
+      "original_css": ".house {width: 200px;height: 200px; \n position: relative;} \n .roof {width: 0;height: 0;border-left: 100px solid transparent;border-right: 100px solid transparent;border-bottom: 60px solid #d9534f; position: absolute;top: 0;} \n .walls {width: 100%;height: 140px;background-color: pink ;position: absolute;bottom: 0;} \n .door {width: 40px;height: 80px;background-color: #704214; position: absolute;bottom: 10px;left: 50%;transform: translateX(-50%);} \n .window {width: 40px;height: 40px;background-color: #aad5e7; \n position: absolute;top: 50px; margin-left:8px; margin-right:8px;} \n .window:first-child {left: 30px;} \n .window:last-child {right: 0px;}",
+      "original_html": "<div><div class='house'> \n <div class='roof'></div> \n <div class='walls'> \n <div class='door'></div> \n <div class='window'></div> \n <div class='window'></div> \n </div>\n</div>",
+      "answer_css": ".walls {background-color: blue}"
+    },
+    {
+      "name": "stage 2",
+      "question": "His first guest, Mary, the giant is the first to came and she cannot enter the door. Help her by increasing the door size by 10px.\nSelect the class of the door using .door{} and use the 'padding' styling.\nExample: .element {padding: 0px}",
+      "original_css": ".house {width: 200px;height: 200px;position: relative;} \n .roof {width: 0;height: 0;border-left: 100px solid transparent;border-right: 100px solid transparent;border-bottom: 60px solid #d9534f; position: absolute;top: 0;} \n .walls {width: 100%;height: 140px;background-color: blue ;position: absolute;bottom: 0;} \n .door {width: 40px;height: 80px;background-color: #704214; position: absolute;bottom: 10px;left: 50%;transform: translateX(-50%);} \n .window {width: 40px;height: 40px;background-color: #aad5e7; \n position: absolute;top: 50px;} \n .window:first-child {left: 30px;} \n .window:last-child {right: 0px;}",
+      "original_html": "<div><div class='house'> \n <div class='roof'></div> \n <div class='walls'> \n <div class='door'></div> \n <div class='window'></div> \n <div class='window'></div> \n </div>\n</div>",
+      "answer_css": ".door {padding: 10px}"
+    },
+    {
+      "name": "stage 3",
+      "question": "The house is full and yet there are more freinds to come, help Sam increase the size of his house by increasing the width of the house by 500px and the width of the roof by 300px \nSelect the class of the element using .house{} and use the 'width' styling, do the same for the roof element.\nExample: .element {width: 0px}",
+      "original_css": ".house {width: 200px;height: 200px;position: relative;} \n .roof {width: 0;height: 0;border-left: 100px solid transparent;border-right: 100px solid transparent;border-bottom: 60px solid #d9534f; position: absolute;top: 0;} \n .walls {width: 100%;height: 140px;background-color: blue ;position: absolute;bottom: 0;} \n .door {width: 40px;height: 80px;background-color: #704214;padding : 10px; position: absolute;bottom: 10px;left: 50%;transform: translateX(-50%);} \n .window {width: 40px;height: 40px;background-color: #aad5e7; \n position: absolute;top: 50px;} \n .window:first-child {left: 30px;} \n .window:last-child {right: 0px;}",
+      "original_html": "<div><div class='house'> \n <div class='roof'></div> \n <div class='walls'> \n <div class='door'></div> \n <div class='window'></div> \n <div class='window'></div> \n </div>\n</div>",
+      "answer_css": ".house {width: 500px}\n.roof {width:300px}"
+    },
+    {
+      "name": "stage 4",
+      "question": "Everyone is having fun and the night is still young, yet Sam had a different idea....... help him shrink the windows down to 5px so no one can see what he is trying to do \nExample: .element {height: 0px}",
+      "original_css": ".house {width: 500px;height: 200px;position: relative;} \n .roof {width: 300px;height: 0;border-left: 100px solid transparent;border-right: 100px solid transparent;border-bottom: 60px solid #d9534f; position: absolute;top: 0;} \n .walls {width: 100%;height: 140px;background-color: blue ;position: absolute;bottom: 0;} \n .door {width: 40px;height: 80px;background-color: #704214;padding : 10px; position: absolute;bottom: 10px;left: 50%;transform: translateX(-50%);} \n .window {width: 40px;height: 40px;background-color: #aad5e7; \n position: absolute;top: 50px;} \n .window:first-child {left: 30px;} \n .window:last-child {right: 0px;}",
+      "original_html": "<div><div class='house'> \n <div class='roof'></div> \n <div class='walls'> \n <div class='door'></div> \n <div class='window'></div> \n <div class='window'></div> \n </div>\n</div>",
+      "answer_css": ".window {height: 5px}"
+    },
+    {
+      "name": "stage 5",
+      "question": "The house is full, yet it is not the same as before, only Sam remain. Help him return his house back to normal\nReturn the walls background-color back to pink; Door padding back to 0px; House and roof back to 200px and 0px relatively; Windows back to 40px  \nExample: .element {action: value}",
+      "original_css": ".house {width: 500px;height: 200px;position: relative;} \n .roof {width: 300px;height: 0;border-left: 100px solid transparent;border-right: 100px solid transparent;border-bottom: 60px solid #d9534f; position: absolute;top: 0;} \n .walls {width: 100%;height: 140px;background-color: blue ;position: absolute;bottom: 0;} \n .door {width: 40px;height: 80px;background-color: #704214;padding : 10px; position: absolute;bottom: 10px;left: 50%;transform: translateX(-50%);} \n .window {width: 40px;height: 5px;background-color: #aad5e7; \n position: absolute;top: 50px;} \n .window:first-child {left: 30px;} \n .window:last-child {right: 0px;}",
+      "original_html": "<div><div class='house'> \n <div class='roof'></div> \n <div class='walls'> \n <div class='door'></div> \n <div class='window'></div> \n <div class='window'></div> \n </div>\n</div>",
+      "answer_css": ".walls {background-color: pink}\n.door {padding: 0px}\n.house {width: 200px}\n.roof {width:0px}\n.window {height: 40px}"
+    },
+    {
+      "name": "stage 6",
+      "question": "move the window to the right using float",
+      "original_css": ".window {width: 80px;height: 120px;background-color: #cde0f7;border: 2px solid black;}",
+      "original_html": "<div class='window'></div><div class='window'></div>",
+      "answer_css": ".window {float: right}"
+    },
+    {
+      "name": "stage 7",
+      "question": "move the window to the bottom using absolute",
+      "original_css": ".window {width: 80px;height: 120px;background-color: #cde0f7;border: 2px solid black;}",
+      "original_html": "<div class='window'></div>",
+      "answer_css": ".window {position: absolute;\nbottom: 0px}"
+    },
+    {
+      "name": "stage 8",
+      "question": "line up the window by using flex box",
+      "original_css": ".wall {}.window {width: 80px;height: 120px;background-color: #cde0f7;border: 2px solid black;}",
+      "original_html": "<div class='wall'><div class='window'></div><div class='window'></div></div>",
+      "answer_css": ".wall {display: flex}"
+    },
+    {
+      "name": "stage 9",
+      "question": "justify the windows position using .wall to space them evenly",
+      "original_css": ".wall {display: flex;}.window {width: 80px;height: 120px;background-color: #cde0f7;border: 2px solid black;}",
+      "original_html": "<div class='wall'><div class='window'></div><div class='window'></div></div><div class='window'></div>",
+      "answer_css": ".wall {justify-content: space-evenly}"
+    },
+    {
+      "name": "stage 10",
+      "question": "using flex direction and 600px height to change the direction of the window to make a skyscaper",
+      "original_css": ".wall {display: flex; justify-content: space-evenly;}.window {width: 80px;height: 120px;background-color: #cde0f7;border: 2px solid black;}",
+      "original_html": "<div class='wall'><div class='window'></div><div class='window'></div></div><div class='window'></div>",
+      "answer_css": ".wall {flex-direction: column;\nheight: 600px}"
+    },
+    {
+      "name": "stage 11",
+      "question": "Add 2px solid black border to door and 1px solid black to doorknob.",
+      "original_css": ".wall{border: 2px solid purple;height:350px;width:600px;background-color:pink}.door {height: 180px;width: 100px;position:relative;display: flex;justify-content: space-around;flex-direction: column;}\n .doorKnob {height:20px;width:20px;border-radius: 50%;}",
+      "original_html": "<div class='wall'><div class='door'><div class='doorKnob'></div></div></div>",
+      "answer_css": ".door {border: 2px solid black}\n.doorKnob {border: 1px solid black}"
+    },
+    {
+      "name": "stage 12",
+      "question": "Using flex display on the wall to center the door and add 350px height and 600px width to the walls",
+      "original_css": ".wall{border: 2px solid purple;height:350px;width:600px;background-color:pink}.door {border: 2px solid black;height: 180px;width: 100px;position:relative;display: flex;justify-content: space-around;flex-direction: column;}\n .doorKnob {border: 2px solid black;height:20px;width:20px;border-radius: 50%;}",
+      "original_html": "<div class='wall'><div class='door'><div class='doorKnob'></div></div></div>",
+      "answer_css": ".wall {display: flex;\njustify-content: center}"
+    },
+    {
+      "name": "stage 13",
+      "question": "lower the door using align-item, color the wall pink, color the door brown and the door knob yellow",
+      "original_css": ".wall{border: 2px solid purple;height:350px;width:600px;background-color:pink}.door {background-color: brown;border: 2px solid black;height: 180px;width: 100px;position:relative;display: flex;justify-content: space-around;flex-direction: column;}\n .doorKnob {background-color: yellow;border: 2px solid black;height:20px;width:20px;border-radius: 50%;}",
+      "original_html": "<div class='wall'><div class='door'><div class='doorKnob'></div></div></div>",
+      "answer_css": ".wall {align-items: flex-end}\n.door {background-color: brown}\n.doorKnob {background-color: yellow}"
+    },
+    {
+      "name": "stage 14",
+      "question": "window had been added. add 100px height and width, double border, cyan background color.",
+      "original_css": ".window{}.left{margin-bottom:110px; margin-right:70px}.right{margin-bottom:110px; margin-left:70px}.wall{border: 2px solid purple;height:350px;width:600px;background-color:pink}.door {background-color: brown;border: 2px solid black;height: 180px;width: 100px;position:relative;display: flex;justify-content: space-around;flex-direction: column;}\n .doorKnob {background-color: yellow;border: 2px solid black;height:20px;width:20px;border-radius: 50%;}",
+      "original_html": "<div class='wall'><div class='window left'></div><div class='door'><div class='doorKnob'></div></div><div class='window right'></div></div>",
+      "answer_css": ".window {border-style: double;\nwidth: 100px;\nheight: 100px;\nbackground-color: cyan}"
+    },
+    {
+      "name": "stage 15",
+      "question": "add roof, follow instruction. add border, transparent border.",
+      "original_css": ".window{}.left{margin-bottom:110px; margin-right:70px}.right{margin-bottom:110px; margin-left:70px}.wall{border: 2px solid purple;height:350px;width:600px;background-color:pink}.door {background-color: brown;border: 2px solid black;height: 180px;width: 100px;position:relative;display: flex;justify-content: space-around;flex-direction: column;}\n .doorKnob {background-color: yellow;border: 2px solid black;height:20px;width:20px;border-radius: 50%;}",
+      "original_html": "<div class='roof'></div><div class='wall'><div class='window left'></div><div class='door'><div class='doorKnob'></div></div><div class='window right'></div></div>",
+      "answer_css": ".window {border-style: double;\nwidth: 100px;\nheight: 100px;\nbackground-color: cyan}"
+    }
+  ]
+}

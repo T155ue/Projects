@@ -1,0 +1,385 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: rgb(12, 68, 164);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 68, 164, 1) 0%,
+    rgba(31, 103, 220, 1) 100%
+  );
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header-content {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.header .search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.header .search input {
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+  width: 280px;
+  padding-right: 50px;
+  position: relative;
+}
+
+.header .search input::placeholder {
+  color: #ccc;
+}
+
+.header .search .search-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.searchbtn {
+  color: #fff;
+  border-radius: 20px;
+  background-color: #555;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+.backbtn {
+  color: #fff;
+  border-radius: 20px;
+  background-color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+.options {
+  width: 250px;
+  padding: 10px;
+  left: 100px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 64px;
+  z-index: 2;
+  background-color: #111;
+}
+
+.tab-btn {
+  height: 48px;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  color: #fff;
+}
+
+.tab-text {
+  position: relative;
+  height: 48px;
+  line-height: 48px;
+}
+
+.tab-text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tab-btn.active .tab-text::after {
+  opacity: 1;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.dark-section {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.dark-section h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.dark-section p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.dark-section button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-view {
+  background-color: #fbbf24;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button-view:hover {
+  background-color: #f59e0b;
+}
+
+.button-inbox,
+.button-confirm {
+  background-color: #3b82f6;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button-inbox:hover,
+.button-confirm:hover {
+  background-color: #2563eb;
+}
+
+.button-reject {
+  background-color: #e53e3e;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button-reject:hover {
+  background-color: #c53030;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.group .relative {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+}
+
+.group .relative img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.group .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px;
+}
+
+.group h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.group p {
+  margin: 0;
+  color: #ccc;
+}
+
+.group .buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.popup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.popup img {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.popup label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.popup p {
+  margin: 0;
+  text-align: center;
+}
+
+.popup .profile-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.button-send-request {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button-send-request:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
+}
+
+.popup {
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2d3748;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.button-confirm,
+.button-reject {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-confirm {
+  background-color: #4caf50;
+  color: white;
+}
+
+.button-reject {
+  background-color: #f44336;
+  color: white;
+}
+
+.button-confirm:hover,
+.button-reject:hover {
+  opacity: 0.8;
+}
